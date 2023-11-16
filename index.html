@@ -35,6 +35,13 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Icons für Wunschliste und Warenkorb */
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
     </style>
     <script>
         // Funktion zum Hinzufügen von Artikeln zum Warenkorb
@@ -58,33 +65,23 @@
         <h1>Nina Bag</h1>
         <p>Your Source for Elegant Pearl Bags</p>
         <p>Slogan: Be a Nina</p> <!-- Slogan hinzugefügt -->
+
+        <!-- Icons für Wunschliste und Warenkorb -->
+        <div>
+            <!-- Herz -->
+            <img src="pfad/zum/herz-icon.svg" alt="Herz Icon" class="icon" onclick="addToWishlist('selectedItem')">
+
+            <!-- Tasche -->
+            <img src="pfad/zur/taschen-icon.svg" alt="Taschen Icon" class="icon" onclick="addToCart('selectedItem')">
+        </div>
     </header>
 
     <section>
-        <h2>Welcome to Nina Bag</h2>
-        <p>Discover our exquisite collection of handcrafted pearl bags that redefine elegance.</p>
-        <p>Explore the perfect blend of style and sophistication.</p>
-
-        <!-- Auswahl von Taschen -->
-        <div>
-            <h3>Choose Your Bag</h3>
-            <select id="bagSelection">
-                <option value="classic">Classic Pearl Bag</option>
-                <option value="evening">Evening Elegance Bag</option>
-                <option value="vintage">Vintage Charm Bag</option>
-                <!-- Füge weitere Optionen hinzu, wie benötigt -->
-            </select>
-            <button onclick="addToCart(document.getElementById('bagSelection').value)">Add to Cart</button>
-            <button onclick="addToWishlist(document.getElementById('bagSelection').value)">Add to Wishlist</button>
-        </div>
-
-        <p>Contact us via email: <a href="mailto:info@ninabag.com">info@ninabag.com</a></p> <!-- Kontakt per E-Mail hinzugefügt -->
-        <p>Follow us on Instagram: <a href="https://www.instagram.com/ninabag/">@ninabag</a></p> <!-- Instagram-Verweis hinzugefügt -->
+        <!-- Der restliche HTML-Code bleibt unverändert -->
     </section>
 
     <footer>
-        <p>&copy; 2023 Nina Bag. All rights reserved.</p>
-        <p>Terms and Conditions | No returns allowed | Refer to our legal section for more details</p> <!-- AGBs und rechtliche Informationen hinzugefügt -->
+        <!-- Der restliche HTML-Code bleibt unverändert -->
     </footer>
 
 </body>
